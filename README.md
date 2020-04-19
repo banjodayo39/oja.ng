@@ -2,7 +2,7 @@
 An ecommerce application that allows grocery order
 
 # Frame Work
-*[django]
-*[html]
+ *django
+ *[html]
 *[javascript]
 *[bootstap]
