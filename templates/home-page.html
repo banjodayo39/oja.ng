@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" xmlns:background-color="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <title>Oja.ng</title>
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="{% static 'css/mdb.min.css' %}" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="{% static 'css/style.min.css' %}" rel="stylesheet">
+    <style type="text/css">
+    html,
+    body,
+    header,
+
+#parent-container{
+       padding-top: 30px;
+  padding-bottom: 30px;
+    }
+
+    @media (max-width: 740px) {
+
+      html,
+      body,
+      header,
+      .carousel {
+        height: 100vh;
+      }
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+
+      html,
+      body,
+      header,
+      .carousel {
+        height: 100vh;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+<header>
+    <!-- Navbar -->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+
+        <!-- Navbar -->
+
+        <div class="container">
+
+            <!-- Main Header-->
+            <a class="navbar-brand waves-effect" href="#" target="_blank">
+                <img alt="" src="static/img/home/oja_logo.png">
+            </a>
+
+            <!-- Collapse -->
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                    data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <!-- LEFT -->
+                <div class='col-sm-8 mr-auto'>
+                    <div class="input-group ">
+                        <input aria-describedby="my-search" aria-label="Search" class="form-control" placeholder="Search"
+                               type="text">
+                        <div class="input-group-append">
+                        <span class="input-group-text" id="my-search" style="background-color:red">
+                            <i class="fas fa-search" style="color: white"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /SEARCH BAR -->
+
+                <!-- Right -->
+                <ul class="navbar-nav nav-flex-icons ml-auto">
+                    <li class="nav-item dropdown ">
+                        <div class="dropdown">
+                            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                               href="#" id="navbarDropdown" role="button">
+                                <i class="fas fa-user"></i>
+                                <span class="clearfix d-none d-sm-inline-block"> Log in </span>
+                            </a>
+                            <div aria-labelledby="navbarDropdown" class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Account</a>
+                                <a class="dropdown-item" href="#">Orders</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Sign Up</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+
+                        <a class="nav-link waves-effect">
+                            <span class="badge red z-depth-1 mr-1"> 5       </span>
+                            <i class="fas fa-heart"></i>
+
+                            <span class="clearfix d-none d-sm-inline-block"> Cart </span>
+
+                        </a>
+
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect">
+                            <i class="fa fa-shopping-cart"></i><span class="badge red z-depth-1 mr-1">2</span>
+                            <span class="clearfix d-none d-sm-inline-block"> Cart </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+</header>
+
+
+<main>
+    <div class="container" id="parent-container">
+        <!--Section:category-->
+        <section class="text-center mb-4" id="category-section">
+            <!--Grid row-->
+            <div class="row wow fadeIn ">
+                <!--Grid column: Nav BAr-->
+                <div class="col-lg-3 col-md-3 mb-3">
+                    <!--Card-->
+                    <div class="card card-accent-danger " style="max-width: 18rem;">
+                        <div class="card-body text-danger">
+                            <ul class="list-group list-group-flush" style="list-style-type:disc">
+                                <li class="list-group-item">
+                                    <a href="#">
+                                        <i class="icon_heart_alt">Proteins</i>
+                                    </a>
+                                </li>
+                                <li class="list-group-item" id="li-no-line">
+                                    <a href="#">
+                                        <i class="icon_heart_alt">Grains</i>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">
+                                        <i class="icon_heart_alt"> Vegetables</i>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">
+                                        <i class="icon_heart_alt"> Fats and Oil</i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/Card-->
+                </div>
+
+                <div class="col-lg-9 ">
+                    <!--         &lt;!&ndash;Carousel Wrapper&ndash;&gt;
+                             <div id="carousel-example-1z" class="carousel slide carousel-fade pt-4" data-ride="carousel">
+
+                                 &lt;!&ndash;Indicators&ndash;&gt;
+                                 <ol class="carousel-indicators">
+                                     <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+                                     <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                                     <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+                                 </ol>
+                                 &lt;!&ndash;/.Indicators&ndash;&gt;
+                             </div>
+         -->
+                    <!--Slides-->
+                    <div class="carousel-inner">
+                        <!--First slide-->
+                        <div class="carousel-item active">
+
+                            <div class="card">
+                                <img alt="" class="card-img-top img-fluid" src="static/img/home/oja-carousel.jpg">
+
+                                <!-- Mask & flexbox options-->
+                                <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+
+                                    <!-- Content -->
+                                    <div class="text-center white-text mx-5 wow fadeIn">
+                                        <h1 class="mb-4">
+                                            <strong></strong>
+                                        </h1>
+
+                                        <p>
+                                            <strong>Fast and Quality Service</strong>
+                                        </p>
+
+                                        <p class="mb-4 d-none d-md-block">
+                                            <strong></strong>
+                                        </p>
+                                    </div>
+                                    <!-- Content -->
+
+                                </div>
+                                <!-- Mask & flexbox options-->
+
+                            </div>
+                        </div>
+                        <!--/First slide-->
+
+                        <!--Second slide-->
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img alt="" class="card-img-top img-fluid" src="static/img/home/oja-carousel-2.jpg">
+
+                                <!-- Mask & flexbox options-->
+                                <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+
+                                    <!-- Content -->
+                                    <div class="text-center white-text mx-5 wow fadeIn">
+                                        <h1 class="mb-4">
+                                            <strong></strong>
+                                        </h1>
+
+                                        <p>
+                                            <strong>Fast and Quality Service</strong>
+                                        </p>
+
+                                        <p class="mb-4 d-none d-md-block">
+                                            <strong></strong>
+                                        </p>
+                                    </div>
+                                    <!-- Content -->
+
+                                </div>
+                                <!-- Mask & flexbox options-->
+
+                            </div>
+
+                        </div>
+                        <!--/Second slide-->
+
+                        <!--Third slide-->
+                        <div class="card">
+                            <img alt="" class="card-img-top img-fluid" src="static/img/home/oja-carousel-3.jpg">
+
+                            <!-- Mask & flexbox options-->
+                            <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+
+                                <!-- Content -->
+                                <div class="text-center white-text mx-5 wow fadeIn">
+                                    <h1 class="mb-4">
+                                        <strong></strong>
+                                    </h1>
+
+                                    <p>
+                                        <strong>Fast and Quality Service</strong>
+                                    </p>
+
+                                    <p class="mb-4 d-none d-md-block">
+                                        <strong></strong>
+                                    </p>
+                                </div>
+                                <!-- Content -->
+
+                            </div>
+                            <!-- Mask & flexbox options-->
+
+                        </div>
+                        <!--/Third slide-->
+
+                    </div>
+                    <!--/.Slides-->
+
+                    <!--Controls-->
+                    <a class="carousel-control-prev" data-slide="prev" href="#carousel-example-1z" role="button">
+                        <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" data-slide="next" href="#carousel-example-1z" role="button">
+                        <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <!--/Section: category-->
+
+        <!--Section: Products v.3-->
+        <div class="main-header">
+            <section class="text-center mb-4">
+
+                <!--Grid row-->
+                <div class="row wow fadeIn">
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img alt=""
+                                     class="card-img-top"
+                                     src="static/img/home/rice.jpg">
+                                <a>
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                            <!--Card image-->
+
+                            <!--Card content-->
+                            <div class="card-body text-center">
+                                <!--Category & Title-->
+                                <a class="grey-text" href="">
+                                    <h5>Food</h5>
+                                </a>
+                                <h5>
+                                    <strong>
+                                        <a class="dark-grey-text" href="">Bag of Rice
+                                            <span class="badge badge-pill danger-color">NEW</span>
+                                        </a>
+                                    </strong>
+                                </h5>
+
+                                <h4 class="font-weight-bold blue-text">
+                                    <strong>#12,000</strong>
+                                </h4>
+
+                            </div>
+                            <!--Card content-->
+
+                        </div>
+                        <!--Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img alt=""
+                                     class="card-img-top"
+                                     src="static/img/home/palm_oil.jpg">
+                                <a>
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                            <!--Card image-->
+
+                            <!--Card content-->
+                            <div class="card-body text-center">
+                                <!--Category & Title-->
+                                <a class="grey-text" href="">
+                                    <h5>Oil</h5>
+                                </a>
+                                <h5>
+                                    <strong>
+                                        <a class="dark-grey-text" href="">Palm Oil</a>
+                                    </strong>
+                                </h5>
+
+                                <h4 class="font-weight-bold blue-text">
+                                    <strong>#2,000</strong>
+                                </h4>
+
+                            </div>
+                            <!--Card content-->
+
+                        </div>
+                        <!--Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img alt=""
+                                     class="card-img-top"
+                                     src="static/img/home/organic_oil.jpg">
+                                <a>
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                            <!--Card image-->
+
+                            <!--Card content-->
+                            <div class="card-body text-center">
+                                <!--Category & Title-->
+                                <a class="grey-text" href="">
+                                    <h5>Oil</h5>
+                                </a>
+                                <h5>
+                                    <strong>
+                                        <a class="dark-grey-text" href="">Groundnut Oil
+                                            <span class="badge badge-pill primary-color">bestseller</span>
+                                        </a>
+                                    </strong>
+                                </h5>
+
+                                <h4 class="font-weight-bold blue-text">
+                                    <strong>#1,000</strong>
+                                </h4>
+
+                            </div>
+                            <!--Card content-->
+
+                        </div>
+                        <!--Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Fourth column-->
+                    <div class="col-lg-3 col-md-6 mb-4">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img alt="" class="card-img-top"
+                                     src="static/img/home/Shoko.jpg">
+                                <a>
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                            <!--Card image-->
+
+                            <!--Card content-->
+                            <div class="card-body text-center">
+                                <!--Category & Title-->
+                                <a class="grey-text" href="">
+                                    <h5>Vegetables</h5>
+                                </a>
+                                <h5>
+                                    <strong>
+                                        <a class="dark-grey-text" href="">Shoko</a>
+                                    </strong>
+                                </h5>
+
+                                <h4 class="font-weight-bold red-text">
+                                    <strong>#50</strong>
+                                </h4>
+
+                            </div>
+                            <!--Card content-->
+
+                        </div>
+                        <!--Card-->
+
+                    </div>
+                    <!--Fourth column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row 2-->
+                <div class="row wow fadeIn">
+
+                    <!--Grid column 1-->
+                    <div class="col-lg-3 col-md-6 mb-4">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img alt=""
+                                     class="card-img-top"
+                                     src="static/img/home/semo.jpg">
+                                <a>
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                            <!--Card image-->
+
+                            <!--Card content-->
+                            <div class="card-body text-center">
+                                <!--Category & Title-->
+                                <a class="grey-text" href="">
+                                    <h5>Flour</h5>
+                                </a>
+                                <h5>
+                                    <strong>
+                                        <a class="dark-grey-text" href="">Semo
+                                            <span class="badge badge-pill danger-color">NEW</span>
+                                        </a>
+                                    </strong>
+                                </h5>
+
+                                <h4 class="font-weight-bold red-text">
+                                    <strong>#2000</strong>
+                                </h4>
+
+                            </div>
+                            <!--Card content-->
+
+                        </div>
+                        <!--Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column 2-->
+                    <div class="col-lg-3 col-md-6 mb-4">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img alt=""
+                                     class="card-img-top"
+                                     src="static/img/home/Shoko.jpg">
+                                <a>
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                            <!--Card image-->
+
+                            <!--Card content-->
+                            <div class="card-body text-center">
+                                <!--Category & Title-->
+                                <a class="grey-text" href="">
+                                    <h5>Vegetable</h5>
+                                </a>
+                                <h5>
+                                    <strong>
+                                        <a class="dark-grey-text" href="">Shoko</a>
+                                    </strong>
+                                </h5>
+
+                                <h4 class="font-weight-bold blue-text">
+                                    <strong>#100</strong>
+                                </h4>
+
+                            </div>
+                            <!--Card content-->
+
+                        </div>
+                        <!--Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column 3-->
+                    <div class="col-lg-3 col-md-6 mb-4">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img alt=""
+                                     class="card-img-top"
+                                     src="static/img/home/semo.jpg">
+                                <a>
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                            <!--Card image-->
+
+                            <!--Card content-->
+                            <div class="card-body text-center">
+                                <!--Category & Title-->
+                                <a class="grey-text" href="">
+                                    <h5>Flour</h5>
+                                </a>
+                                <h5>
+                                    <strong>
+                                        <a class="dark-grey-text" href="">Semo
+                                            <span class="badge badge-pill primary-color">bestseller</span>
+                                        </a>
+                                    </strong>
+                                </h5>
+
+                                <h4 class="font-weight-bold blue-text">
+                                    <strong>#899</strong>
+                                </h4>
+
+                            </div>
+                            <!--Card content-->
+
+                        </div>
+                        <!--Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column 4-->
+                    <div class="col-lg-3 col-md-6 mb-4">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img alt="" class="card-img-top"
+                                     src="static/img/home/rodo.jpg">
+                                <a>
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                            <!--Card image-->
+
+                            <!--Card content-->
+                            <div class="card-body text-center">
+                                <!--Category & Title-->
+                                <a class="grey-text" href="">
+                                    <h5>Vegetable</h5>
+                                </a>
+                                <h5>
+                                    <strong>
+                                        <a class="dark-grey-text" href="">Rodo</a>
+                                    </strong>
+                                </h5>
+
+                                <h4 class="font-weight-bold red-text">
+                                    <strong>#219</strong>
+                                </h4>
+
+                            </div>
+                            <!--Card content-->
+
+                        </div>
+                        <!--Card-->
+
+                    </div>
+                    <!--Grid column -->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+
+        </div>
+
+        <!--Pagination-->
+        <nav class="d-flex justify-content-center wow fadeIn">
+            <ul class="pagination pg-blue">
+
+                <!--Arrow left-->
+                <li class="page-item disabled">
+                    <a aria-label="Previous" class="page-link" href="#">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+
+                <li class="page-item active">
+                    <a class="page-link" href="#">1
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">4</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">5</a>
+                </li>
+
+                <li class="page-item">
+                    <a aria-label="Next" class="page-link" href="#">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!--Pagination-->
+
+    </div>
+</main>
+<!--Main layout-->
+
+<!--Footer-->
+<footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+    <!--Call to action-->
+    <div class="pt-4">
+        <a class="btn btn-outline-white" href="https://mdbootstrap.com/docs/jquery/getting-started/download/"
+           role="button"
+           target="_blank">Download MDB
+            <i class="fas fa-download ml-2"></i>
+        </a>
+        <a class="btn btn-outline-white" href="https://mdbootstrap.com/education/bootstrap/" role="button"
+           target="_blank">Start
+            free tutorial
+            <i class="fas fa-graduation-cap ml-2"></i>
+        </a>
+    </div>
+    <!--/.Call to action-->
+
+    <hr class="my-4">
+
+    <!-- Social icons -->
+    <div class="pb-4">
+        <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+            <i class="fab fa-facebook-f mr-3"></i>
+        </a>
+
+        <a href="=https://twitter.com/MDBootstrap" target="_blank">
+            <i class="fab fa-twitter mr-3"></i>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
+            <i class="fab fa-youtube mr-3"></i>
+        </a>
+
+        <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
+            <i class="fab fa-google-plus-g mr-3"></i>
+        </a>
+
+        <a href="https://dribbble.com/mdbootstrap" target="_blank">
+            <i class="fab fa-dribbble mr-3"></i>
+        </a>
+
+        <a href="https://pinterest.com/mdbootstrap" target="_blank">
+            <i class="fab fa-pinterest mr-3"></i>
+        </a>
+
+        <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
+            <i class="fab fa-github mr-3"></i>
+        </a>
+
+        <a href="http://codepen.io/mdbootstrap/" target="_blank">
+            <i class="fab fa-codepen mr-3"></i>
+        </a>
+    </div>
+    <!-- Social icons -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+        © 2019 Copyright:
+        <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> MDBootstrap.com </a>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script src="{% static 'js/jquery-3.4.1.min.js' %}" type="text/javascript"></script>
+<!-- Bootstrap tooltips -->
+<script src="{% static 'js/popper.min.js' %}" type="text/javascript"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="{% static 'js/bootstrap.min.js' %}" type="text/javascript"></script>
+<!-- MDB core JavaScript -->
+<script src="{% static 'js/mdb.min.js' %}" type="text/javascript"></script>
+<!-- Initializations -->
+<script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+
+</html>
